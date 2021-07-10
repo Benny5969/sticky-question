@@ -1,0 +1,116 @@
+            body {
+                margin: 0;
+                font-size: 28px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .header {
+                background-color: #5a5959;
+                padding: 15px;
+                text-align: center;
+                color: ivory;
+            }
+
+            #navbar {
+                overflow: hidden;
+                background-color: rgb(243, 243, 243);
+            }
+
+            .a1 {
+                float: left;
+                display: block;
+                color: #030303;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            .a2 {
+                float: right;
+                display: block;
+                color: #030303;
+                text-align: center;
+                padding: 14px 18px 14px 10px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            .ico{
+                margin-top: 9px;
+                padding-top:6px;
+                padding-bottom:6px;
+                padding-left:6.5px;
+                padding-right:5.5px;
+                float:right;
+                height: 17px;
+                background-color: rgb(243, 243, 243);
+                background-origin: inherit;
+                border-radius: 50%;
+            }
+
+            .a1:hover {
+                background-color: black;
+                color: #ddd;
+            }
+
+            .ico:hover{
+                background-color: rgba(120, 129, 129, 0.548);
+            }
+
+            .content {
+                padding: 16px;
+                background-color: rgb(17, 17, 17);
+                color: oldlace;
+            }
+
+            .sticky {                               /*activated when yoffset of navbar is 0*/
+                position: fixed;                    /*makes position remain settled eventhough we scroll*/
+                top: 0;                             /*makes it stick to top*/
+                width: 100%;
+                }
+
+            .sticky + .content{
+                padding-top: 60px;
+            }
+
+            .mbox{
+                margin-top:5%;
+            }
+            .img1{
+                float:left;
+                margin-left: 6%;
+                border-radius: 5%;
+            }
+
+            .img2{
+                float:initial;
+                margin-right: 6.5%;
+                margin-left: 6.5%;
+                border-radius: 5%;
+            }
+
+            .img3{
+                float:right;
+                margin-right: 6%;
+                border-radius: 5%;
+            }
+
+            .img2:hover{
+                width:23%;
+                margin-right:7.5%;
+                margin-left: 7.5%;
+                margin-bottom:1%;
+            }
+
+            .img1:hover{
+                width:23%;
+                margin-left: 7%;
+                margin-right: 1%;
+
+            }
+
+            .img3:hover{
+                width:23%;
+                margin-right: 7%;
+            }

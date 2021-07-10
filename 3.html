@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="3.css">                        <!--reference to css file-->
+    </head>
+    
+    <body>
+
+        <div class="header">                                        <!--heading box not sticky-->
+            <h2>Favourite Songs</h2>
+            <p>scroll down for more songs</p>
+        </div>
+
+        <div id="navbar">                                           <!--sticky navigation bar, giving id for script functions-->
+            <a class="a1">Home</a>
+            <a class="a1">Playlists</a>
+            <a class="a1">Artists</a>
+            <a class="a1">Library</a>
+            <a class="a2">Search</a>
+            <img class="ico" src="https://img.icons8.com/ios-glyphs/30/000000/search--v2.png"/> <!--search icon from internet-->
+        </div>
+
+        <div class="content">
+            <div class="mbox">                                      <!--using images to enable scrolling down-->
+                <img src="images (5).jpg" width=25%; class="img1">
+                <img src="download.jpg" width=25%; class="img2">
+                <img src="download (1).jpg" width=25%; class="img3">
+            </div>
+            <div class="mbox">
+                <img src="images (1).jpg" width=25%; class="img1">
+                <img src="images (2).jpg" width=25%; class="img2">
+                <img src="images.jpg" width=25%; class="img3">
+            </div>
+            <div class="mbox">
+                <img src="images (3).jpg" width=25%; class="img1">
+                <img src="images (4).jpg" width=25%; class="img2">
+                <img src="download.jpg" width=25%; class="img3">     
+            </div>
+            <div class="mbox">
+                <img src="download (1).jpg" width=25%; class="img1">
+                <img src="download.jpg" width=25%; class="img2">
+            </div>
+        </div>
+
+        <script>                                                    //using script for creating java function
+        window.onscroll = function() {myFunction()};                //a function is called on scrolling
+        var navbar = document.getElementById("navbar");             //id navbar is stored in a variable
+        var sticky = navbar.offsetTop;                              //navigation bar's top offset is noted
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {                     //initially value of sticky is -ve; as it reaches windows page y offset=0
+                navbar.classList.add("sticky")                      //sticky class (explained in css) is added to navigation bar
+            } else {
+                navbar.classList.remove("sticky");                  
+            }
+        }
+        </script>
+
+    </body>
+</html>
